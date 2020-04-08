@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #43840F;
+}
+
+body {
+  background-image: url('/images/site-bg.jpg');
+  background-size: cover;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand {
+  margin-right: 5em;
+}
+
+.slogan {
+  margin-left: 5em;
+}
+
+@media screen and (max-width: 1366px) {
+  .brand, .slogan {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .brand, .slogan {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .brand, .slogan {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .brand, .slogan {
+    width: 35%;
+    margin: 2em 0;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
